@@ -1,28 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Home</title>
-<style>
-
-table {
-  border-collapse: collapse;
-  width: 80%;
-}
-
-th, td {
-  text-align: left;
-  padding: 8px;
-}
-
-tr:nth-child(even){background-color: #f2f2f2}
-
-th {
-  background-color: orange;
-  color: white;
-}
-
-</style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Attendance</title>
+  <link rel="stylesheet" href="css/main.css">
 
 </head>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
@@ -56,14 +39,17 @@ new Chart("myChart", {
 
 
 
-<table class="center">
-  <tr>
-    <th>Course Code</th>
-    <th>Last Class Attended</th> 
-    <th>Duty Leave</th>
-    <th>Total Delv(L,T,P)</th>
-    <th>Total Att.(L,T,P)</th>
-    <th>Total Percentage</th>
+<table class="content-table">
+  <thead>
+    <tr>
+          <th>Course Code</th>
+          <th>Last Class Attended</th> 
+          <th>Duty Leave</th>
+          <th>Total Delv(L,T,P)</th>
+          <th>Total Att.(L,T,P)</th>
+          <th>Total Percentage</th>
+  </thead>
+  <tbody>
 
   </tr>
   <tr>
@@ -138,6 +124,7 @@ new Chart("myChart", {
     <td>183</td>
     <td>83</td>
   </tr>
+ </tbody>
 </table>
 </body>
 </html>
